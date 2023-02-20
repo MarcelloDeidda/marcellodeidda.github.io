@@ -1,0 +1,68 @@
+* {
+    font-family: "Share Tech Mono";
+}
+
+#navbar {
+    background-color: #F6AE2D;
+    transition: 200ms;
+}
+
+#navbar:hover {
+    background-color: #EBEBEB;
+}
+
+#navbar:hover .navbar-item-custom {
+    color: #33658A;
+}
+
+#navbar:hover .navbar-item-custom:hover {
+    color: #F6AE2D;
+}
+
+.navbar .navbar-item-custom {
+    color: #EBEBEB;
+    font-size: 20px;
+    transition: 200ms;
+}
+
+#brand {
+    font-family: monoton;
+    font-size: 35px;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+.section-light {
+    background-color: #707070;
+}
+
+.section-dark {
+    background-color: #1F1F1F;
+}
+
+#title {
+    height: 100vh;
+}
+
+.section-title {
+    color: #EBEBEB;
+    font-family: monoton;
+    font-size: 55px;
+    text-align: center;
+}
+
+#main-title {
+    font-size: 70px;
+    position: absolute;
+    top: 230px;
+    left: 100px;
+}
+
+#main-subtitle {
+    font-size: 35px;
+    position: absolute;
+    top: 310px;
+    left: 390px;
+}
