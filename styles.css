@@ -2,9 +2,14 @@
     font-family: "Share Tech Mono";
 }
 
+#body {
+    overflow-y: hidden;
+}
+
 #navbar {
     background-color: #F6AE2D;
     transition: 200ms;
+    opacity: 0;
 }
 
 #navbar:hover {
@@ -58,6 +63,8 @@
     position: absolute;
     top: 230px;
     left: 100px;
+    transition: 1000ms;
+    opacity: 0;
 }
 
 #main-subtitle {
@@ -65,4 +72,11 @@
     position: absolute;
     top: 310px;
     left: 390px;
+    transition: 1000ms;
+    opacity: 0;
+}
+
+#about {
+    color: #EBEBEB;
+    font-size: 18px;
 }
