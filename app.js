@@ -3,14 +3,30 @@ const mainSubitle = document.getElementById("main-subtitle");
 const navbar = document.getElementById("navbar");
 const body = document.getElementById("body");
 
-setTimeout(() => window.scrollTo(0, 0), 1);
+console.log(document.documentElement.scrollTop);
 
-setTimeout(() => {
+if (document.documentElement.scrollTop === 0) {
+    setTimeout(() => {
+        mainTitle.style.transition = "1000ms";
+        mainTitle.style.opacity = "1";
+
+        mainSubitle.style.transition = "1000ms";
+        mainSubitle.style.opacity = "1";
+    }, 500);
+    
+    setTimeout(() => {
+        navbar.style.transition = "200ms";
+        navbar.style.opacity = "1";
+        body.style.overflowY = "scroll";
+    }, 1500);
+} else {
     mainTitle.style.opacity = "1";
-    mainSubitle.style.opacity = "1";
-}, 500);
+    mainTitle.style.transition = "1000ms";
 
-setTimeout(() => {
+    mainSubitle.style.opacity = "1";
+    mainSubitle.style.transition = "1000ms";
+
     navbar.style.opacity = "1";
+    navbar.style.transition = "200ms";
     body.style.overflowY = "scroll";
-}, 1500);
+};
