@@ -2,6 +2,10 @@
     font-family: "Share Tech Mono";
 }
 
+html {
+    font-size: 11px;
+}
+
 #body {
     overflow-y: hidden;
 }
@@ -25,17 +29,17 @@
 
 .navbar .navbar-item-custom {
     color: #EBEBEB;
-    font-size: 20px;
+    font-size: 1.5rem;
     transition: 200ms;
 }
 
 #brand {
     font-family: monoton;
-    font-size: 35px;
+    font-size: 2.7rem;
 }
 
 .section {
-    padding: 90px 0;
+    padding: 7.5rem 1.7rem;
 }
 
 .section-light {
@@ -46,36 +50,37 @@
     background-color: #1F1F1F;
 }
 
-#title {
-    height: 100vh;
+#title,
+#contacts {
+    min-height: 100vh;
 }
 
 .section-title {
     color: #EBEBEB;
     font-family: monoton;
-    font-size: 65px;
+    font-size: 5rem;
     text-align: center;
 }
 
 #main-title {
-    font-size: 70px;
+    font-size: 6rem;
     position: absolute;
-    top: 230px;
-    left: 100px;
+    top: 19rem;
+    left: 8.3rem;
     opacity: 0;
 }
 
 #main-subtitle {
-    font-size: 35px;
+    font-size: 3rem;
     position: absolute;
-    top: 310px;
-    left: 390px;
+    top: 25.8rem;
+    left: 32.5rem;
     opacity: 0;
 }
 
 #about {
     color: #EBEBEB;
-    font-size: 18px;
+    font-size: 1.4rem;
 }
 
 #about-img {
@@ -85,13 +90,14 @@
 
 #projects {
     color: #EBEBEB;
-    font-size: 18px;
+    font-size: 1.4rem;
 }
 
 .preview-img {
     border-radius: 10%;
     opacity: 0.9;
     transition: 500ms;
+    min-height: 30rem;
 }
 
 #bookapp-img {
@@ -116,4 +122,118 @@
 
 #python-img:hover {
     background: url("images/python-preview.jpg") left bottom / cover;
+}
+
+#experience {
+    max-height: 130rem;
+}
+
+.experience-card {
+    position: relative;
+    color: #EBEBEB;
+    background-color: #EBEBEB;
+    border-radius: 10px;
+    opacity: 0.5;
+    transition: 200ms;
+    z-index: 0;
+}
+
+.experience-card:hover {
+    opacity: 1;
+    z-index: 1;
+}
+
+.experience-card-title {
+    font-size: 2rem;
+    color: #33658A;
+    z-index: inherit;
+}
+
+.experience-card-text {
+    font-size: 1.3rem;
+    color: #33658A;
+    z-index: inherit;
+}
+
+#experience-hyperion {
+    transform: rotate(-7deg);
+}
+
+#experience-hyperion:hover {
+    transform: translate(-5rem, -6rem) scale(1.1);
+}
+
+#experience-skills {
+    transform: translate(-5rem, 1rem) rotate(3deg);
+}
+
+#experience-skills:hover {
+    transform: translate(0, -10rem) scale(1.1);
+}
+
+#experience-certificates {
+    transform: translate(5rem, -60rem) rotate(10deg);
+}
+
+#experience-certificates:hover {
+    transform: translate(0, -55rem) scale(1.1);
+}
+
+#experience-languages {
+    transform: translate(-15rem, -50rem) rotate(-3deg);
+}
+
+#experience-languages:hover {
+    transform: translate(-10rem, -45rem) scale(1.1);
+}
+
+#experience-music {
+    transform: translate(0, -65rem);
+}
+
+#experience-music:hover {
+    transform: translate(0, -60rem) scale(1.1);
+}
+
+#contacts {
+    background-color: #EBEBEB;
+}
+
+#contacts h2 {
+    color: #33658A;
+}
+
+.contact-item {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #33658A;
+    transition: 200ms;
+}
+
+.contact-item:hover {
+    color: #F6AE2D;
+}
+
+@media (min-width: 1300px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1400px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1600px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1800px) {
+    html {
+        font-size: 18px;
+    }
 }
