@@ -98,6 +98,24 @@ html {
     font-size: 1.4rem;
 }
 
+.project-section-title {
+    font-size: 2.5rem;
+}
+
+.project-description {
+    font-size: 1.1rem;
+}
+
+.project-a {
+    text-decoration: none;
+    color: #F5C32C;
+}
+
+.project-a:hover {
+    text-decoration: underline;
+    color: #EBEBEB;
+}
+
 .preview-img {
     border-radius: 10%;
     opacity: 0.9;
