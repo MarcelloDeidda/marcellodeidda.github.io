@@ -12,13 +12,13 @@ if (document.documentElement.scrollTop === 0) {
 
         mainSubitle.style.transition = "1000ms";
         mainSubitle.style.opacity = "1";
-    }, 500);
+    }, 1000);
     
     setTimeout(() => {
         navbar.style.transition = "200ms";
         navbar.style.opacity = "1";
         body.style.overflowY = "scroll";
-    }, 1500);
+    }, 2000);
 } else {
     mainTitle.style.opacity = "1";
     mainTitle.style.transition = "1000ms";

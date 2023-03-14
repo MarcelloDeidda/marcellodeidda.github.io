@@ -11,7 +11,7 @@ html {
 }
 
 #navbar {
-    background-color: #F6AE2D;
+    background-color: #F5C32C;
     opacity: 0;
 }
 
@@ -24,11 +24,12 @@ html {
 }
 
 #navbar:hover .navbar-item-custom:hover {
-    color: #F6AE2D;
+    /*color:F6AE2D;*/
+    color: #F5C32C;
 }
 
 .navbar .navbar-item-custom {
-    color: #EBEBEB;
+    color: #707070;
     font-size: 1.5rem;
     transition: 200ms;
 }
@@ -40,6 +41,10 @@ html {
 
 .section {
     padding: 7.5rem 1.7rem;
+}
+
+.main-section {
+    background: url(images/background.png);
 }
 
 .section-light {
@@ -65,7 +70,7 @@ html {
 #main-title {
     font-size: 6rem;
     position: absolute;
-    top: 19rem;
+    top: 21rem;
     left: 8.3rem;
     opacity: 0;
 }
@@ -73,7 +78,7 @@ html {
 #main-subtitle {
     font-size: 3rem;
     position: absolute;
-    top: 25.8rem;
+    top: 27.8rem;
     left: 32.5rem;
     opacity: 0;
 }
@@ -116,6 +121,14 @@ html {
     background: url("images/mortgage-preview.jpg") right center / cover;
 }
 
+#sardegna-img {
+    background: url("images/sardegna-preview.jpg") center top / cover;
+}
+
+#sardegna-img:hover {
+    background: url("images/sardegna-preview.jpg") center bottom / cover;
+}
+
 #python-img {
     background: url("images/python-preview.jpg") left top / cover;
 }
@@ -125,74 +138,107 @@ html {
 }
 
 #experience {
-    max-height: 130rem;
+    max-height: 120rem;
+}
+
+.experience-row {
+    max-height: 60vh;
 }
 
 .experience-card {
     position: relative;
-    color: #EBEBEB;
     background-color: #EBEBEB;
     border-radius: 10px;
-    opacity: 0.5;
-    transition: 200ms;
-    z-index: 0;
+    opacity: 0.6;
+    transition: 500ms;
 }
 
 .experience-card:hover {
     opacity: 1;
-    z-index: 1;
+    z-index: 3;
 }
 
 .experience-card-title {
     font-size: 2rem;
-    color: #33658A;
     z-index: inherit;
 }
 
 .experience-card-text {
     font-size: 1.3rem;
-    color: #33658A;
     z-index: inherit;
+}
+
+a.experience-card-text {
+    color: #EBEBEB;
+}
+
+a.experience-card-text:hover {
+    color: #F5C32C;
+}
+
+.experience-card-subtext {
+    font-size: 1rem;
+    z-index: inherit;
+}
+
+.experience-card-skill-list {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.experience-card-list {
+    list-style: none;
 }
 
 #experience-hyperion {
     transform: rotate(-7deg);
+    background-color: #FBFBFB;
+    color: #33658A;
 }
 
 #experience-hyperion:hover {
-    transform: translate(-5rem, -6rem) scale(1.1);
+    transform: translate(-5rem, 0) scale(1.2);
 }
 
 #experience-skills {
-    transform: translate(-5rem, 1rem) rotate(3deg);
+    transform: translate(0, 1rem) rotate(3deg);
+    background-color: #A0A0A0;
+    color: #FBFBFB;
 }
 
 #experience-skills:hover {
-    transform: translate(0, -10rem) scale(1.1);
+    transform: translate(3rem, -5rem) scale(1.2);
 }
 
 #experience-certificates {
-    transform: translate(5rem, -60rem) rotate(10deg);
+    transform: translate(5rem, -5rem) rotate(10deg);
+    z-index: 2;
+    background-color: #33658A;
+    color: #EBEBEB;
 }
 
 #experience-certificates:hover {
-    transform: translate(0, -55rem) scale(1.1);
+    transform: translate(0, 0) scale(1.2);
 }
 
 #experience-languages {
-    transform: translate(-15rem, -50rem) rotate(-3deg);
+    transform: translate(0, -5rem) rotate(-3deg);
+    background-color: #F5C32C;
+    color: #707070;
 }
 
 #experience-languages:hover {
-    transform: translate(-10rem, -45rem) scale(1.1);
+    transform: translate(5rem, 0) scale(1.2);
 }
 
 #experience-music {
-    transform: translate(0, -65rem);
+    transform: translate(0, -10rem);
+    background-color: #FBFBFB;
+    color: #33658A;
 }
 
 #experience-music:hover {
-    transform: translate(0, -60rem) scale(1.1);
+    transform: translate(0, -5rem) scale(1.2);
 }
 
 #contacts {
@@ -203,15 +249,24 @@ html {
     color: #33658A;
 }
 
+#contact-list {
+    height: 25rem;
+}
+
 .contact-item {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-decoration: none;
     color: #33658A;
     transition: 200ms;
 }
 
 .contact-item:hover {
-    color: #F6AE2D;
+    color: #F5C32C;
+}
+
+#footer {
+    background-color: #33658A;
+    height: 3rem;
 }
 
 @media (min-width: 1300px) {
