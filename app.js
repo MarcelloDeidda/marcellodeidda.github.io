@@ -11,13 +11,13 @@ if (bodyContainer.scrollTop === 0) {
 
         mainSubitle.style.transition = "1000ms";
         mainSubitle.style.opacity = "1";
-    }, 200);
+    }, 500);
     
     setTimeout(() => {
         navbar.style.transition = "200ms";
         navbar.style.opacity = "1";
         bodyContainer.style.overflowY = "scroll";
-    }, 400);
+    }, 1000);
 } else {
     mainTitle.style.opacity = "1";
     mainTitle.style.transition = "1000ms";
