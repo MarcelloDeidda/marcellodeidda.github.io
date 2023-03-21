@@ -186,7 +186,7 @@ html {
 
 .experience-card:hover {
     opacity: 1;
-    z-index: 4;
+    z-index: 5;
 }
 
 .experience-card-title {
@@ -562,6 +562,7 @@ a.experience-card-text:hover {
     
     #experience-music:hover {
         transform: translate(0, -40rem) scale(1.1);
+        z-index: 5;
     }
 }
 
