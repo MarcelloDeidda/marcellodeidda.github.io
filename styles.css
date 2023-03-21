@@ -139,7 +139,6 @@ html {
 }
 
 #bookapp-img {
-    height: 100%;
     background: url("images/bookapp-preview.jpg") center top / cover;
 }
 
@@ -148,7 +147,6 @@ html {
 }
 
 #mortgage-img {
-    height: 100%;
     background: url("images/mortgage-preview.jpg") left center / cover;
 }
 
@@ -157,7 +155,6 @@ html {
 }
 
 #sardegna-img {
-    height: 100%;
     background: url("images/sardegna-preview.jpg") center top / cover;
 }
 
@@ -166,7 +163,6 @@ html {
 }
 
 #python-img {
-    height: 100%;
     background: url("images/python-preview.jpg") left top / cover;
 }
 
@@ -307,6 +303,12 @@ a.experience-card-text:hover {
     height: 3rem;
 }
 
+@media (min-width: 768px) {
+    .project-section {
+        height: 40rem;
+    }
+}
+
 @media (min-width: 1100px) {
     html {
         font-size: 10px;
@@ -432,8 +434,12 @@ a.experience-card-text:hover {
     #bookapp-img, #mortgage-img, #sardegna-img, #python-img {
         object-fit: cover;
         border-radius: 20px;
-        height: 35rem;
         width: 100%;
+    }
+
+    .project-img {
+        height: 40rem;
+        margin-bottom: 10rem;
     }
 
     #project-list div:nth-of-type(1) {
@@ -527,8 +533,9 @@ a.experience-card-text:hover {
         max-height: 20rem;
     }
 
-    #bookapp-img, #mortgage-img, #sardegna-img, #python-img {
-        height: 30rem;
+    .project-img {
+        height: 35rem;
+        margin-bottom: 8rem;
     }
 
     #experience {
