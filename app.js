@@ -4,20 +4,20 @@ const navbar = document.getElementById("navbar");
 const body = document.getElementById("body");
 const bodyContainer = document.getElementById("body-container");
 
-if (document.documentElement.scrollTop === 0) {
+if (bodyContainer.scrollTop === 0) {
     setTimeout(() => {
         mainTitle.style.transition = "1000ms";
         mainTitle.style.opacity = "1";
 
         mainSubitle.style.transition = "1000ms";
         mainSubitle.style.opacity = "1";
-    }, 1000);
+    }, 200);
     
     setTimeout(() => {
         navbar.style.transition = "200ms";
         navbar.style.opacity = "1";
         bodyContainer.style.overflowY = "scroll";
-    }, 2000);
+    }, 400);
 } else {
     mainTitle.style.opacity = "1";
     mainTitle.style.transition = "1000ms";

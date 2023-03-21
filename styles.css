@@ -100,12 +100,12 @@ html {
 #about {
     color: #EBEBEB;
     font-size: 1.38rem;
-    text-align: justify;
 }
 
 #about-img {
     object-fit: cover;
     border-radius: 10%;
+    min-height: 45rem;
 }
 
 #projects {
@@ -425,14 +425,15 @@ a.experience-card-text:hover {
     #about-img {
         object-fit: cover;
         border-radius: 20px;
-        max-height: 40vh;
+        max-height: 20rem;
         width: 100%;
+        min-height: 0;
     }
 
     #bookapp-img, #mortgage-img, #sardegna-img, #python-img {
         object-fit: cover;
         border-radius: 20px;
-        height: 50vh;
+        height: 35rem;
         width: 100%;
     }
 
@@ -524,11 +525,11 @@ a.experience-card-text:hover {
 
 @media (max-width: 575px) {
     #about-img {
-        max-height: 25vh;
+        max-height: 20rem;
     }
 
     #bookapp-img, #mortgage-img, #sardegna-img, #python-img {
-        height: 30vh;
+        height: 30rem;
     }
 
     #experience {
@@ -557,8 +558,8 @@ a.experience-card-text:hover {
         z-index: 3;
     }
     
-    #experience-languages:hover, #experience-languages:active {
-        transform: translate(5rem, -23rem) scale(1.2);
+    #experience-languages:hover {
+        transform: translate(5rem, -25rem) scale(1.2);
     }
     
     #experience-music {
@@ -574,7 +575,7 @@ a.experience-card-text:hover {
 
 @media (max-width: 500px) {
     #about-img {
-        max-height: 20vh;
+        max-height: 15rem;
     }
 
     #main-title {
