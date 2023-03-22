@@ -117,6 +117,10 @@ html {
     font-size: 2.5rem;
 }
 
+.project-title {
+    font-size: 1.6rem !important;
+}
+
 .project-description {
     font-size: 1.1rem;
 }
@@ -171,11 +175,11 @@ html {
 }
 
 #experience {
-    max-height: 200vh;
+    max-height: 120rem;
 }
 
 .experience-row {
-    max-height: 60vh;
+    max-height: 35rem;
 }
 
 .experience-card {
@@ -389,7 +393,7 @@ a.experience-card-text:hover {
     }
 
     #experience {
-        max-height: 250vh;
+        max-height: 110rem;
     }
 
     .experience-card-skill-list {
@@ -539,7 +543,11 @@ a.experience-card-text:hover {
     }
 
     #experience {
-        max-height: 150vh;
+        max-height: 120rem;
+    }
+
+    .experience-row {
+        max-height: 45rem;
     }
 
     #experience-hyperion:hover {
