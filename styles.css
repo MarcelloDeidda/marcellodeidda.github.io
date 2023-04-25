@@ -150,6 +150,14 @@ html {
     background: url("images/bookapp-preview.jpg") center bottom / cover;
 }
 
+#react-img {
+    background: url("images/work-session-pacer-preview.jpg") left center / cover;
+}
+
+#react-img:hover {
+    background: url("images/work-session-pacer-preview.jpg") right center / cover;
+}
+
 #mortgage-img {
     background: url("images/mortgage-preview.jpg") left center / cover;
 }
@@ -435,7 +443,7 @@ a.experience-card-text:hover {
         width: 100%;
     }
 
-    #bookapp-img, #mortgage-img, #sardegna-img, #python-img {
+    #bookapp-img, #react-img, #mortgage-img, #sardegna-img, #python-img {
         object-fit: cover;
         border-radius: 20px;
         width: 100%;
@@ -478,6 +486,14 @@ a.experience-card-text:hover {
         order: 7;
     }
 
+    #project-list div:nth-of-type(9) {
+        order: 9;
+    }
+
+    #project-list div:nth-of-type(10) {
+        order: 10;
+    }
+
     .fullstack-item:nth-of-type(1) {
         order: 1;
     }
@@ -506,11 +522,11 @@ a.experience-card-text:hover {
 @media (max-width: 700px) {
     #contact-list {
         flex-direction: column;
-        height: 30rem;
+        height: 50rem;
     }
 
     .contact-item {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     #title {
