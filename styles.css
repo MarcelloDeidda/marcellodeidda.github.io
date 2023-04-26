@@ -151,11 +151,11 @@ html {
 }
 
 #react-img {
-    background: url("images/work-session-pacer-preview.jpg") left center / cover;
+    background: url("images/relax-preview.jpg") left center / cover;
 }
 
 #react-img:hover {
-    background: url("images/work-session-pacer-preview.jpg") right center / cover;
+    background: url("images/focus-preview.jpg") right center / cover;
 }
 
 #mortgage-img {
