@@ -27,6 +27,12 @@ html {
 #navbar {
     background-color: #F5C32C;
     opacity: 0;
+    min-height: 8vh;
+}
+
+#navbar-toggler {
+    min-height: 4rem;
+    min-width: 4rem;
 }
 
 #navbar:hover {
