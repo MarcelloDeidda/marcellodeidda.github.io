@@ -4,28 +4,16 @@ const navbar = document.getElementById("navbar");
 const body = document.getElementById("body");
 const bodyContainer = document.getElementById("body-container");
 
-if (bodyContainer.scrollTop === 0) {
-    setTimeout(() => {
-        mainTitle.style.transition = "1000ms";
-        mainTitle.style.opacity = "1";
-
-        mainSubitle.style.transition = "1000ms";
-        mainSubitle.style.opacity = "1";
-    }, 500);
-    
-    setTimeout(() => {
-        navbar.style.transition = "200ms";
-        navbar.style.opacity = "1";
-        bodyContainer.style.overflowY = "scroll";
-    }, 1000);
-} else {
-    mainTitle.style.opacity = "1";
+setTimeout(() => {
     mainTitle.style.transition = "1000ms";
+    mainTitle.style.opacity = "1";
 
-    mainSubitle.style.opacity = "1";
     mainSubitle.style.transition = "1000ms";
+    mainSubitle.style.opacity = "1";
+}, 5);
 
-    navbar.style.opacity = "1";
+setTimeout(() => {
     navbar.style.transition = "200ms";
+    navbar.style.opacity = "1";
     bodyContainer.style.overflowY = "scroll";
-};
+}, 10);

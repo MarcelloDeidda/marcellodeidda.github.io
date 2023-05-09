@@ -27,10 +27,10 @@ html {
 #navbar {
     background-color: #F5C32C;
     opacity: 0;
-    min-height: 8vh;
+    min-height: 7vh;
 }
 
-#navbar-toggler {
+#navbar-toggler-icon {
     min-height: 4rem;
     min-width: 4rem;
 }
@@ -44,7 +44,6 @@ html {
 }
 
 #navbar:hover .navbar-item-custom:hover {
-    /*color:F6AE2D;*/
     color: #F5C32C;
 }
 
@@ -124,7 +123,7 @@ html {
 }
 
 .project-title {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem;
 }
 
 .project-description {
@@ -210,7 +209,20 @@ html {
 }
 
 .experience-card-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    z-index: inherit;
+}
+
+.experience-card-title a {
+    color: inherit;
+}
+
+.experience-card-title a:hover {
+    color: #F5C32C;
+}
+
+.experience-card-subtitle {
+    font-size: 1.5rem;
     z-index: inherit;
 }
 
