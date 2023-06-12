@@ -29,7 +29,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link navbar-item-custom mx-4" href="#about">About</a>
             <a class="nav-link navbar-item-custom mx-4" href="#projects">Projects</a>
             <a class="nav-link navbar-item-custom mx-4" href="#experience">Experience</a>
             <a class="nav-link navbar-item-custom mx-4" href="#footer">Contacts</a>
@@ -40,22 +39,36 @@
 
     <main class="container-fluid px-0">
       <!-- Title -->
-      <section class="section section-light main-section" id="title">
-        <h1 class="section-title" id="main-title">MARCELLO DEIDDA</h1>
-        <p class="section-title" id="main-subtitle">FULLSTACK DEVELOPER</p>
-      </section>
-
-      <!-- About -->
-      <section class="section section-dark" id="about">
-        <h2 class="section-title mb-5">ABOUT</h2>
-        <div class="row m-2 m-lg-3 pt-5">
-          <div class="col-12 col-md-6 col-lg-5 px-3 px-lg-5 py-3">
-            <img src="images/about.jpg" alt="" class="img-fluid" id="about-img">
+      <section class="section section-dark" id="title">
+        <div id="title-left">
+          <h1 class="section-title" id="main-title">MARCELLO DEIDDA</h1>
+          <p class="section-title" id="main-subtitle">FULLSTACK DEVELOPER</p>
+          <div id="title-previews">
+            <a href="#fullstack" class="title-preview">
+              <img class="img-fluid" src="images/bookapp-preview-2.png" alt="">
+              <p>FULLSTACK</p>
+            </a>
+            <a href="#react" class="title-preview">
+              <img class="img-fluid" src="images/redaubergine-preview.png" alt="">
+              <p>REACT.JS</p>
+            </a>
+            <a href="#python" class="title-preview">
+              <img class="img-fluid" src="images/python-preview.jpg" alt="">
+              <p>PYTHON</p>
+            </a>
+            <a href="#games" class="title-preview">
+              <img class="img-fluid" src="images/connect4-preview.png" alt="">
+              <p>GAMES</p>
+            </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-7 px-3 px-lg-5 py-3 d-flex flex-column justify-content-center">
+        </div>
+        <div id="title-right">
+          <img class="img-fluid" src="images/title.jpg" alt="">
+          <div id="title-description">
+            <p>My first programming experience was creating RPG games as a teenager, by writing complex algorithms. Fifteen years later I decided to start teaching myself how to code.</p>
             <p>Fullstack Developer specialising in MERN stack. Recently completed a Bootcamp in Software Engineering funded by DfE, after two years of self-study on both front-end and back-end technologies.</p>
-            <p>My first programming experience was creating RPG games as a teenager, by writing complex algorithms. Fifteen years later I decided to start teaching myself how to code. Ever since, I've been learning HTML, CSS, Javascript, Node.js, SQL, MongoDB, Python. Currently learning React.js.</p>
-            <p>Teacher by nature and eager learner, focused on personal development through continuous studying.</p>
+            <p>Self-motivated and passionate about continuous learning, with a strong focus on personal development.</p>
+            <a href="#contacts">Get in touch!</a>
           </div>
         </div>
       </section>
@@ -65,7 +78,7 @@
         <h2 class="section-title mb-5">PROJECTS</h2>
         <div class="row m-3 pt-3" id="project-list">
           <!-- Fullstack -->
-          <div class="col-12 col-md-7 px-4 px-xl-5 py-md-5 d-flex flex-column justify-content-center text-center text-md-end project-section">
+          <div class="col-12 col-md-7 px-4 px-xl-5 py-md-5 d-flex flex-column justify-content-center text-center text-md-end project-section" id="fullstack">
             <h3 class="project-section-title mb-4 fullstack-item">Fullstack Projects</h3>
             <div class="my-2 my-md-4 fullstack-item">
               <p class="mb-0 project-title"><a class="project-a" target="_blank" href="https://marcellodeidda-bookapp.cyclic.app/">BookApp</a> - <a class="project-a" target="_blank" href="https://github.com/MarcelloDeidda/bookApp">GitHub</a></p>
@@ -80,7 +93,7 @@
           <div class="col-12 col-md-5 px-4 px-xl-5 py-5 project-section project-img">
             <div class="preview-img h-100" id="react-img"></div>
           </div>
-          <div class="col-12 col-md-7 px-4 px-xl-5 py-md-5 d-flex flex-column justify-content-center text-center text-md-start project-section">
+          <div class="col-12 col-md-7 px-4 px-xl-5 py-md-5 d-flex flex-column justify-content-center text-center text-md-start project-section" id="react">
             <h3 class="project-section-title mb-4">React.js projects</h3>
             <div class="my-2">
               <p class="mb-0 project-title"><a class="project-a" target="_blank" href="https://marcellodeidda-worksessionpacer.netlify.app/">Work Session Pacer</a> - <a class="project-a" target="_blank" href="https://github.com/MarcelloDeidda/work-session-pacer">GitHub</a></p>
@@ -136,7 +149,7 @@
             </div>
           </div>
           <!-- Python -->
-          <div class="col-12 col-md-7 px-4 px-xl-5 py-md-5 d-flex flex-column justify-content-center text-center text-md-end project-section">
+          <div class="col-12 col-md-7 px-4 px-xl-5 py-md-5 d-flex flex-column justify-content-center text-center text-md-end project-section" id="python">
             <h3 class="project-section-title mb-4">Python projects</h3>
             <div class="my-2 my-md-4">
               <p class="mb-0 project-title"><a class="project-a" target="_blank" href="https://github.com/MarcelloDeidda/ebookstore">Ebookstore</a></p>
@@ -150,6 +163,25 @@
           </div>
           <div class="col-12 col-md-5 px-4 px-xl-5 py-5 project-section project-img">
             <div class="preview-img h-100" id="python-img"></div>
+          </div>
+          <!-- Games -->
+          <div class="col-12 col-md-5 px-4 px-xl-5 py-5 project-section project-img" id="games">
+            <div class="h-100" id="gaming-div"></div>
+          </div>
+          <div class="col-12 col-md-7 px-4 px-xl-5 py-md-5 d-flex flex-column justify-content-center text-center text-md-start project-section">
+            <h3 class="project-section-title mb-4">Gaming Classics - React.js</h3>
+            <div class="my-2 my-md-4">
+              <p class="mb-0 project-title"><a class="project-a" target="_blank" href="https://marcellodeidda-tictactoe.netlify.app/">Tic Tac Toe</a></p>
+              <p class="project-description">HTML, CSS, React.js</p>
+            </div>
+            <div class="my-2 my-md-4">
+              <p class="mb-0 project-title"><a class="project-a" target="_blank" href="https://marcellodeidda-connect4.netlify.app/">Connect Four</a></p>
+              <p class="project-description mb-0">HTML, CSS, React.js</p>
+            </div>
+            <div class="my-2 my-md-4">
+              <p class="mb-0 project-title"><a class="project-a" target="_blank" href="https://marcellodeidda-crabbybeach.netlify.app/">Crabby Beach - Minesweeper</a></p>
+              <p class="project-description mb-0">HTML, CSS, React.js</p>
+            </div>
           </div>
         </div>
       </section>
