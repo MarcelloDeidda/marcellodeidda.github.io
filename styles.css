@@ -193,17 +193,6 @@ html {
     opacity: 0;
 }
 
-#about {
-    color: #EBEBEB;
-    font-size: 1.38rem;
-}
-
-#about-img {
-    object-fit: cover;
-    border-radius: 10%;
-    height: 45rem;
-}
-
 #projects {
     color: #EBEBEB;
     font-size: 1.4rem;
@@ -281,6 +270,11 @@ html {
 
 #python-img:hover {
     background: url("images/python-preview.jpg") left bottom / cover;
+}
+
+#root {
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 #experience {

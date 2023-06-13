@@ -1,0 +1,155 @@
+.Block_block__kOxk\+ {
+    color: #000;
+    display: flex;
+    flex: 1;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .1s
+}
+
+.Block_block__kOxk\+ p {
+    margin: 0;
+}
+
+.Block_block-0__an68K {
+    background-color: #cfcf9f
+}
+
+.Block_block-1__hPuEL {
+    background-color: #bfbf8f
+}
+
+.Block_block-2__Tt1vD {
+    background-color: #afaf7f
+}
+
+.Block_block-3__s5CH4 {
+    background-color: #9f9f6f
+}
+
+.Block_block-4__tQZA3 {
+    background-color: #8f8f5f
+}
+
+.Block_block-5__pzSdC {
+    background-color: #7f7f4f
+}
+
+.Block_block-6__wME9G {
+    background-color: #6f6f3f
+}
+
+.Block_block-7__tAWv4,
+.Block_block-8__HxzZO {
+    background-color: #5f5f2f
+}
+
+.Block_block-crab__woGVZ {
+    background-color: #4f4f1f
+}
+
+.Block_block-marked__81Via {
+    background-color: #ff5454;
+    color: #fff
+}
+
+.Block_block-active-explore__w2iJJ:hover {
+    background-color: #999
+}
+
+.Block_block-active-mark__Pv\+Pk:hover {
+    background-color: #f99
+}
+
+.Board_board__vNUkc {
+    background-color: #dad1da80;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: stretch;
+    width: 100%
+}
+
+.Board_board-gameover__X0Jgm {
+    background-color: #aa46618e
+}
+
+.Board_row__y5wK0 {
+    display: flex;
+    flex: 1 1;
+    justify-content: stretch
+}
+
+.Game_game__f1xTs {
+    background-image: url(https://images.unsplash.com/photo-1505279340786-1e3b097e227a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    width: 100%
+}
+
+.GameModeControl_mode__hYqct {
+    align-items: center;
+    color: #000;
+    background-color: #dad1da;
+    display: flex;
+    font-size: 1.2rem;
+    height: 10%;
+    justify-content: space-between;
+    padding: 1rem
+}
+
+.GameModeControl_mode-win__8RJhe {
+    background-color: #58a0a0;
+    color: #faf1fa
+}
+
+.GameModeControl_mode-gameover__dApgu {
+    background-color: #c8a3a0
+}
+
+.GameModeControl_info__1gviv {
+    width: 8rem;
+}
+
+.GameModeControl_info__1gviv p {
+    margin: 0;
+}
+
+.GameModeControl_mode__hYqct button {
+    background-color: #faf1fa;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    width: 5rem;
+    order: 3;
+}
+
+.GameModeControl_mode__hYqct button:hover {
+    opacity: .5
+}
+
+button:disabled {
+    cursor: default;
+    opacity: 1
+}
+
+.GameModeControl_action__x4M3Y button:first-of-type {
+    border-right: none
+}
+
+.GameModeControl_action__x4M3Y button:nth-of-type(2) {
+    border-left: none
+}
+
+@media (max-width: 700px){
+    .GameModeControl_mode__hYqct {
+        padding: 0 2rem;
+    }
+}
+
+/*# sourceMappingURL=main.69ebfd08.css.map*/
