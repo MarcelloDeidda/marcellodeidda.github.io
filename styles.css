@@ -175,7 +175,7 @@ html {
 }
 
 #linkedin-button {
-    position: absolute;
+    position: fixed;
     top: 20rem;
     font-size: 1.7rem;
     width: 15rem;
@@ -186,11 +186,12 @@ html {
     background-color: #0077b5;
     color: #EBEBEB;
     transition: 200ms;
-    transform: translatex(-10rem);
+    transform: translatex(-11rem);
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 15;
 }
 
 #linkedin-button a {
@@ -544,11 +545,6 @@ a.experience-card-text:hover {
 }
 
 @media (max-width: 950px) {
-    #title-description {
-        padding: 1rem;
-        font-size: 1.2rem;
-    }
-
     #experience {
         max-height: 110rem;
     }
@@ -585,6 +581,7 @@ a.experience-card-text:hover {
 }
 
 @media (max-width: 767px) {
+
     #bookapp-img,
     #react-img,
     #mortgage-img,
@@ -674,26 +671,114 @@ a.experience-card-text:hover {
 }
 
 @media (orientation: portrait) {
+    #title {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10rem;
+    }
+
+    #main-title {
+        font-size: 7rem;
+        z-index: 10;
+    }
+
+    #main-subtitle {
+        font-size: 4rem;
+        z-index: 10;
+    }
+
     #title-left {
         min-height: auto;
+        width: 100%;
+        padding-top: 15rem;
     }
 
     #title-previews {
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-around;
-        min-height: 55rem;
+        min-height: 150rem;
+        padding: 0;
+        background-color: transparent;
+        z-index: 10;
     }
 
     #title-previews a {
-        margin: 2rem;
-        height: 20rem;
+        position: relative;
+        width: 100%;
+        height: 25rem;
+        margin: 4rem 0;
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    #title-previews a:hover {
+        opacity: 1;
+        transform: none;
+    }
+
+    #title-previews a img {
+        height: 100%;
+        opacity: 0.8;
+    }
+
+    #title-previews a p {
+        background-color: #707070;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.7;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        height: 100%;
+        font-size: 3rem;
+    }
+
+    #title-right {
+        position: absolute;
+        top: 20rem;
+        box-shadow: 0px 0px 10px 10px #FBFBFB;
+        overflow: hidden;
+        border-radius: 15px;
+        width: 60%;
+        min-height: auto;
+        height: 60rem;
+        margin: 3rem;
+        padding: 0;
+        transform: translate(45rem, -20rem) rotate(-35deg);
+        opacity: 0.5;
+        transition: 800ms;
+    }
+
+    #title-right:hover {
+        transform: none;
+        opacity: 1;
+        z-index: 20;
+    }
+
+    #title-right img {
+        height: 40%;
+        width: 100%;
+    }
+
+    #title-description {
+        font-size: 1.5rem;
+        background-color: #33658A;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 60%;
+    }
+
+    #title-description a {
+        font-size: 2rem;
     }
 }
 
-@media (min-width: 700px) {
+@media (orientation: landscape) {
     #title-right {
         opacity: 0.5;
-        transform: translatex(7rem);
+        transform: translate(8rem, -2rem) rotate(-5deg);
         transition: 400ms;
     }
 
@@ -704,40 +789,17 @@ a.experience-card-text:hover {
 }
 
 @media (max-width: 700px) {
-    #title {
-        overflow: visible;
-        flex-direction: column;
+    #linkedin-button {
+        top: 30rem;
+        font-size: 2rem;
+        width: 17rem;
+        height: 6rem;
     }
 
     #title-right {
-        margin: 5rem 0 0 0;
-        padding-top: 0;
-        box-shadow: 0px -25px 25px 15px #ACCCE3;
-    }
-
-    #title-description {
-        padding: 2.5rem;
-        margin: 0;
-        font-size: 1.3rem;
-        background-color: #1F1F1F;
-    }
-
-    #title-description a {
-        display: block;
-        width: 100%;
-        text-align: center;
-        text-decoration: underline;
-        color: #F5C32C;
-        font-size: 2rem;
-        transition: 200ms;
-    }
-
-    #title-right img {
-        height: 25rem;
-    }
-
-    #linkedin-button {
-        top: 23rem;
+        width: 80%;
+        height: 70rem;
+        transform: translate(35rem, -20rem) rotate(-35deg);
     }
 
     #contact-list {
@@ -760,24 +822,13 @@ a.experience-card-text:hover {
         position: static;
         text-align: center;
     }
+
+    #title-previews {
+        min-height: 110rem;
+    }
 }
 
 @media (max-width: 575px) {
-    #title-previews {
-        padding: 2rem 0;
-    }
-
-    #title-previews a {
-        width: 40%;
-        height: 17rem;
-        margin: 1rem;
-    }
-
-    .project-img {
-        height: 35rem;
-        margin-bottom: 8rem;
-    }
-
     #experience {
         max-height: 120rem;
     }
@@ -824,10 +875,6 @@ a.experience-card-text:hover {
 }
 
 @media (max-width: 500px) {
-    #title-right img {
-        height: 17rem;
-    }
-
     #main-title {
         font-size: 4rem;
     }
