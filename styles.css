@@ -21,13 +21,22 @@ html {
 }
 
 #body-container::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 #navbar {
     background-color: #F5C32C;
     opacity: 0;
     height: 4.5rem;
+}
+
+.navbar-collapse {
+    padding: 0.5rem 0;
+    background-color: #F5C32C;
+}
+
+.navbar:hover .navbar-collapse {
+    background-color: #EBEBEB;
 }
 
 #navbar-toggler-icon {
@@ -71,7 +80,7 @@ html {
 }
 
 #title {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: stretch;
     padding: 0;
@@ -90,18 +99,19 @@ html {
     margin-top: 7rem;
     padding: 0 4rem;
     display: flex;
-    justify-content: stretch;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     width: 100%;
     height: 17rem;
 }
 
 #title-previews a {
+    width: 40%;
     box-shadow: -3px 3px 20px #A0A0A0;
     text-decoration: none;
     border-radius: 15px;
     overflow: hidden;
     color: #EBEBEB;
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -462,44 +472,53 @@ a.experience-card-text:hover {
 }
 
 @media (max-width: 1300px) {
+    #navbar {
+        height: 6rem;
+    }
+
     #experience-hyperion:hover {
         transform: translate(-5rem, 0) scale(1.2);
     }
-    
+
     #experience-skills {
         transform: translate(0, 1rem) rotate(3deg);
     }
-    
+
     #experience-skills:hover {
         transform: translate(3rem, -5rem) scale(1.2);
     }
-    
+
     #experience-certificates {
         transform: translate(5rem, -15rem) rotate(10deg);
     }
-    
+
     #experience-certificates:hover {
         transform: translate(0, -10rem) scale(1.2);
     }
-    
+
     #experience-languages {
         transform: translate(0, -15rem) rotate(-3deg);
     }
-    
+
     #experience-languages:hover {
         transform: translate(5rem, -10rem) scale(1.2);
     }
-    
+
     #experience-music {
         transform: translate(0, -30rem);
     }
-    
+
     #experience-music:hover {
         transform: translate(0, -25rem) scale(1.2);
     }
 }
 
 @media (max-width: 950px) {
+    #title-description {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
     #about-img {
         object-position: right;
     }
@@ -515,19 +534,19 @@ a.experience-card-text:hover {
     .experience-card-text {
         font-size: 1.2rem;
     }
-    
+
     #experience-certificates {
         transform: translate(5rem, -15rem) rotate(10deg);
     }
-    
+
     #experience-certificates:hover {
         transform: translate(15rem, -10rem) scale(1.2);
     }
-    
+
     #experience-music {
         transform: translate(0, -20rem);
     }
-    
+
     #experience-music:hover {
         transform: translate(0, -15rem) scale(1.2);
     }
@@ -547,7 +566,11 @@ a.experience-card-text:hover {
         width: 100%;
     }
 
-    #bookapp-img, #react-img, #mortgage-img, #sardegna-img, #python-img {
+    #bookapp-img,
+    #react-img,
+    #mortgage-img,
+    #sardegna-img,
+    #python-img {
         object-fit: cover;
         border-radius: 20px;
         width: 100%;
@@ -598,6 +621,14 @@ a.experience-card-text:hover {
         order: 10;
     }
 
+    #project-list div:nth-of-type(11) {
+        order: 12;
+    }
+
+    #project-list div:nth-of-type(12) {
+        order: 11;
+    }
+
     .fullstack-item:nth-of-type(1) {
         order: 1;
     }
@@ -613,17 +644,55 @@ a.experience-card-text:hover {
     #experience-hyperion:hover {
         transform: translate(15rem, 0) scale(1.2);
     }
-    
+
     #experience-languages {
         transform: translate(0, 0) rotate(-3deg);
     }
-    
+
     #experience-languages:hover {
         transform: translate(-15rem, 10rem) scale(1.2);
     }
 }
 
+@media (orientation: portrait) {
+    #title-left {
+        min-height: auto;
+    }
+
+    #title-previews {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        min-height: 55rem;
+    }
+
+    #title-previews a {
+        margin: 2rem;
+        height: 20rem;
+    }
+}
+
 @media (max-width: 700px) {
+    #title {
+        overflow: visible;
+        flex-direction: column;
+    }
+
+    #title-right {
+        margin: 5rem 0;
+        padding-top: 0;
+        box-shadow: 0px -5px 20px #33658A;
+    }
+
+    #title-description {
+        padding: 2rem;
+        font-size: 1.2rem;
+        box-shadow: 0px 15px 20px #33658A;
+    }
+
+    #title-right img {
+        height: 25rem;
+    }
+
     #contact-list {
         flex-direction: column;
         height: 50rem;
@@ -633,18 +702,12 @@ a.experience-card-text:hover {
         font-size: 2.2rem;
     }
 
-    #title {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
     #main-title {
         font-size: 5rem;
         position: static;
         text-align: center;
     }
-    
+
     #main-subtitle {
         font-size: 3rem;
         position: static;
@@ -653,8 +716,13 @@ a.experience-card-text:hover {
 }
 
 @media (max-width: 575px) {
-    #about-img {
-        max-height: 20rem;
+    #title-previews {
+        padding: 2rem 0;
+    }
+    #title-previews a {
+        width: 35%;
+        height: 17rem;
+        margin: 1rem;
     }
 
     .project-img {
@@ -673,34 +741,34 @@ a.experience-card-text:hover {
     #experience-hyperion:hover {
         transform: translate(7rem, 0) scale(1.2);
     }
-    
+
     #experience-skills:hover {
         transform: translate(-2rem, -5rem) scale(1.2);
     }
-    
+
     #experience-certificates {
         transform: translate(5rem, -25rem) rotate(10deg);
         z-index: 4;
     }
-    
+
     #experience-certificates:hover {
         transform: translate(0, -20rem) scale(1.1);
     }
-    
+
     #experience-languages {
         transform: translate(0, -28rem) rotate(-3deg);
         z-index: 3;
     }
-    
+
     #experience-languages:hover {
         transform: translate(5rem, -25rem) scale(1.2);
     }
-    
+
     #experience-music {
         transform: translate(8rem, -45rem) rotate(-25deg);
         z-index: 2;
     }
-    
+
     #experience-music:hover {
         transform: translate(0, -40rem) scale(1.1);
         z-index: 5;
@@ -708,14 +776,14 @@ a.experience-card-text:hover {
 }
 
 @media (max-width: 500px) {
-    #about-img {
-        max-height: 15rem;
+    #title-right img {
+        height: 17rem;
     }
 
     #main-title {
         font-size: 4rem;
     }
-    
+
     #main-subtitle {
         font-size: 2rem;
     }
