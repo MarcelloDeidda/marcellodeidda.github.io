@@ -33,6 +33,7 @@ html {
 .navbar-collapse {
     padding: 0.5rem 0;
     background-color: #F5C32C;
+    transition: 200ms;
 }
 
 .navbar:hover .navbar-collapse {
@@ -514,10 +515,6 @@ a.experience-card-text:hover {
         font-size: 1.2rem;
     }
 
-    #about-img {
-        object-position: right;
-    }
-
     #experience {
         max-height: 110rem;
     }
@@ -554,13 +551,6 @@ a.experience-card-text:hover {
 }
 
 @media (max-width: 767px) {
-    #about-img {
-        object-fit: cover;
-        border-radius: 20px;
-        height: 20rem;
-        width: 100%;
-    }
-
     #bookapp-img,
     #react-img,
     #mortgage-img,
