@@ -27,7 +27,7 @@ html {
 #navbar {
     height: 4.5rem;
     background-color: #F5C32C;
-    opacity: 0;
+    transition: 200ms;
 }
 
 .navbar-collapse {
@@ -58,7 +58,7 @@ html {
 }
 
 .navbar .navbar-item-custom {
-    color: #707070;
+    color: #717378;
     font-size: 1.5rem;
     transition: 200ms;
 }
@@ -73,7 +73,7 @@ html {
 }
 
 .section-light {
-    background-color: #707070;
+    background-color: #717378;
 }
 
 .section-dark {
@@ -116,7 +116,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #707070;
+    background-color: #717378;
     margin: 0 1.5rem;
     transition: 300ms;
     cursor: pointer;
@@ -143,6 +143,7 @@ html {
 }
 
 #title-right {
+    opacity: 0.5;
     padding-top: 0;
     flex: 1;
     min-height: 100%;
@@ -284,11 +285,24 @@ html {
     opacity: 0.9;
     transition: 500ms;
     height: 30rem;
+    box-shadow: -3px 3px 15px 7px #aaa;
 }
 
 #gaming-div {
     border-radius: 10%;
     height: 30rem;
+}
+
+#root {
+    box-shadow: -3px 3px 15px 7px #aaa;
+}
+
+#prestissimo-img {
+    background: url("images/prestissimo-preview.jpg") center left / cover;
+}
+
+#prestissimo-img:hover {
+    background: url("images/prestissimo-preview.jpg") center right / cover;
 }
 
 #bookapp-img {
@@ -415,7 +429,7 @@ a.experience-card-text:hover {
 
 #experience-skills {
     transform: translate(0, 1rem) rotate(3deg);
-    background-color: #A0A0A0;
+    background-color: #717378;
     color: #FBFBFB;
 }
 
@@ -437,7 +451,7 @@ a.experience-card-text:hover {
 #experience-languages {
     transform: translate(0, -5rem) rotate(-3deg);
     background-color: #F5C32C;
-    color: #707070;
+    color: #717378;
 }
 
 #experience-languages:hover {
@@ -621,63 +635,59 @@ a.experience-card-text:hover {
     }
 
     .project-section:nth-of-type(1) {
-        order: 1;
+        order: 2;
     }
 
     .project-section:nth-of-type(2) {
-        order: 2;
-    }
-
-    .project-section:nth-of-type(3) {
-        order: 4;
-    }
-
-    .project-section:nth-of-type(4) {
-        order: 3;
-    }
-
-    .project-section:nth-of-type(5) {
-        order: 5;
-    }
-
-    .project-section:nth-of-type(6) {
-        order: 6;
-    }
-
-    .project-section:nth-of-type(7) {
-        order: 8;
-    }
-
-    .project-section:nth-of-type(8) {
-        order: 7;
-    }
-
-    .project-section:nth-of-type(9) {
-        order: 9;
-    }
-
-    .project-section:nth-of-type(10) {
-        order: 10;
-    }
-
-    .project-section:nth-of-type(11) {
-        order: 12;
-    }
-
-    .project-section:nth-of-type(12) {
-        order: 11;
-    }
-
-    .fullstack-item:nth-of-type(1) {
         order: 1;
     }
 
-    .fullstack-item:nth-of-type(2) {
-        order: 2;
+    .project-section:nth-of-type(3) {
+        order: 3;
     }
 
-    .fullstack-item:nth-of-type(3) {
-        order: 3;
+    .project-section:nth-of-type(4) {
+        order: 4;
+    }
+
+    .project-section:nth-of-type(5) {
+        order: 6;
+    }
+
+    .project-section:nth-of-type(6) {
+        order: 5;
+    }
+
+    .project-section:nth-of-type(7) {
+        order: 7;
+    }
+
+    .project-section:nth-of-type(8) {
+        order: 8;
+    }
+
+    .project-section:nth-of-type(9) {
+        order: 10;
+    }
+
+    .project-section:nth-of-type(10) {
+        order: 9;
+    }
+
+    .project-section:nth-of-type(11) {
+        order: 11;
+    }
+
+    .project-section:nth-of-type(12) {
+        order: 12;
+    }
+
+    .project-section:nth-of-type(13) {
+        order: 14;
+    }
+
+    .project-section:nth-of-type(14) {
+        order: 13;
     }
 
     #experience-hyperion:hover {
@@ -745,7 +755,7 @@ a.experience-card-text:hover {
     }
 
     #title-previews a p {
-        background-color: #707070;
+        background-color: #717378;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -769,7 +779,6 @@ a.experience-card-text:hover {
         margin: 3rem;
         padding: 0;
         transform: translate(45rem, -20rem) rotate(-35deg);
-        opacity: 0.5;
         transition: 800ms;
     }
 
@@ -800,7 +809,6 @@ a.experience-card-text:hover {
 
 @media (orientation: landscape) {
     #title-right {
-        opacity: 0.5;
         transform: translate(8rem, -2rem) rotate(-5deg);
         transition: 400ms;
     }
@@ -808,6 +816,10 @@ a.experience-card-text:hover {
     #title-right:hover {
         opacity: 1;
         transform: translatex(0);
+    }
+
+    #prestissimo-preview {
+        object-position: left;
     }
 }
 

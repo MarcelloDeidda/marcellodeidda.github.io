@@ -1,7 +1,5 @@
 const mainTitle = document.getElementById("main-title");
 const mainSubitle = document.getElementById("main-subtitle");
-const navbar = document.getElementById("navbar");
-const body = document.getElementById("body");
 const bodyContainer = document.getElementById("body-container");
 
 setTimeout(() => {
@@ -10,10 +8,8 @@ setTimeout(() => {
 
     mainSubitle.style.transition = "1000ms";
     mainSubitle.style.opacity = "1";
-}, 5);
+}, 200);
 
 setTimeout(() => {
-    navbar.style.transition = "200ms";
-    navbar.style.opacity = "1";
     bodyContainer.style.overflowY = "scroll";
-}, 10);
+}, 800);
